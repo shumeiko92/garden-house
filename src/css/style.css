@@ -1,3 +1,158 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+}
+
+input:focus,
+textarea:focus,
+a:focus,
+button:focus,
+select:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del,
+s,
+strike {
+    text-decoration: line-through;
+}
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+img {
+    border: none;
+    vertical-align: top;
+    max-width: 100%;
+    height: auto;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+html {
+    height: 100%;
+}
+
+iframe {
+    width: -webkit-fill-available;
+}
+
+
+
+
 html {
     font-family: 'Nunito', sans-serif;
 }
@@ -405,4 +560,139 @@ html {
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
+}
+.product__chapter-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.product__chapter-item {
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 21px;
+    transition: .5s;
+}
+
+.product__chapter-item:hover {
+    font-size: 20px;
+    color: #066F14;
+}
+.product__chapter-itemActive {
+    color: #066F14;
+}
+.product__cards {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+.product__card {
+    width: 270px;
+    height: 283px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; */
+    background: #EAF2E5;
+}
+.product__card-img {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.product__card-img.img {
+    width: 100%;
+}
+.product__card-descr {
+    margin-top: 16px;
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+.product__card-name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+}
+.product__card-price {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+.product__openCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background: #066F14;
+    width: 131px;
+    height: 55px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border: none;
+}
+.product__openWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* .product___card:nth-child(1){
+    background: #EAF2E5;
+}
+.product___card:nth-child(2){
+    background: #F0EBE6;
+}
+.product___card:nth-child(3){
+    background: #EAF2E5;
+}
+.product___card:nth-child(4){
+    background: #E7EEED;
+} */
+.reviews {
+    margin-top: 128px;
+}
+.reviews__container {
+    display: flex;
+    justify-content: space-between;
+}
+.reviews__left {
+    width: 502px;
+}
+.reviews__right {
+    width: 602px;
+    z-index: -1;
+}
+.reviews__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+}
+.reviews__text {
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
+.reviews__sliders {
+    margin-top: 43px;
+    padding: 20px 0 30px 30px;
+    width: 597px;
+    height: 204px;
+    background: #066F14;
+    z-index: 2;
+}
+.reviews__img {
+    width: 100%;
+    z-index: 1;
+}
+.slider-name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
 }
